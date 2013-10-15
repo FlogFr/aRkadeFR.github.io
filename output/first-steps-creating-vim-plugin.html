@@ -87,7 +87,17 @@
 	<a href="/tag/programming.html">programming</a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Im gonna explain how to write down your first plugin vim :)</p>
+                <p>Im gonna explain how to write down your first plugin vim :)
+And this is my code :</p>
+<div class="highlight"><pre><span class="kd">function</span> <span class="nx">EditSnippets</span><span class="p">()</span>
+    <span class="k">if</span> <span class="o">!</span><span class="nx">exists</span><span class="p">(</span><span class="s2">&quot;&amp;filetype&quot;</span><span class="p">)</span>
+        <span class="nx">echom</span> <span class="s2">&quot;error, no filetype found&quot;</span>
+    <span class="k">else</span>
+        <span class="nx">echom</span> <span class="s2">&quot;need to open : ~/.vim/snippets/&quot;</span><span class="p">.</span><span class="o">&amp;</span><span class="nx">filetype</span><span class="p">.</span><span class="s2">&quot;.snippets&quot;</span>
+        <span class="nx">execute</span> <span class="s2">&quot;:tabnew ~/.vim/snippets/&quot;</span><span class="p">.</span><span class="o">&amp;</span><span class="nx">filetype</span><span class="p">.</span><span class="s2">&quot;.snippets&quot;</span>
+    <span class="nx">endif</span>
+<span class="nx">endfunction</span>
+</pre></div>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -110,13 +120,8 @@
 
             <li class="list-group-item"><a href="/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/arkadefr.html">
-                        aRkadeFR
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="/tag/plugin.html">
-                        plugin
+                    <a href="/tag/vim.html">
+                        vim
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -125,8 +130,13 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/vim.html">
-                        vim
+                    <a href="/tag/plugin.html">
+                        plugin
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="/tag/arkadefr.html">
+                        aRkadeFR
                     </a>
                 </li>
         </ul>

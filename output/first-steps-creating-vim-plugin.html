@@ -87,8 +87,28 @@
 	<a href="/tag/programming.html">programming</a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>Im gonna explain how to write down your first plugin vim :)
-And this is my code :</p>
+                <p>After couple of years on vim in a daily basis, I wanted to dig on the :help
+command in order to customize my vim.</p>
+<div class="highlight"><pre><span class="o">:</span><span class="n">help</span> <span class="n">filetype</span>
+<span class="o">:</span><span class="n">help</span> <span class="n">script</span>
+<span class="o">:</span><span class="n">help</span> <span class="n">plugin</span>
+</pre></div>
+
+
+<p>After reading couples of help commands, I noticed that writting a plugin for vim
+is really easy and straightforward.</p>
+<p>So I just dive into the code for an easy first plugin. Im typing all the command
+":tabnew ~/.vim/snippets/<filetype>.vim" in order to customize my snippets, then
+when I come back to my first file, I call ":call ReloadAllSnippets()" to reload
+them.</p>
+<p>For those of you that are not familiar with the term snippets, maybe you should
+go <a href="http://www.vim.org/scripts/script.php?script_id=2540" title="here">official snipmate
+website</a> and
+<a href="https://github.com/msanders/snipmate.vim" title="here">github of snipmate</a> for
+installing the bundle snipmate.</p>
+<p>After that, I just type my first plugin in the file :
+'~/.vim/plugin/edit_snippets.vim' </p>
+<p>And this is the result file :</p>
 <div class="highlight"><pre><span class="kd">function</span> <span class="nx">EditSnippets</span><span class="p">()</span>
     <span class="k">if</span> <span class="o">!</span><span class="nx">exists</span><span class="p">(</span><span class="s2">&quot;&amp;filetype&quot;</span><span class="p">)</span>
         <span class="nx">echom</span> <span class="s2">&quot;error, no filetype found&quot;</span>
@@ -120,8 +140,8 @@ And this is my code :</p>
 
             <li class="list-group-item"><a href="/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/vim.html">
-                        vim
+                    <a href="/tag/plugin.html">
+                        plugin
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -130,8 +150,8 @@ And this is my code :</p>
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/plugin.html">
-                        plugin
+                    <a href="/tag/vim.html">
+                        vim
                     </a>
                 </li>
                 <li class="list-group-item tag-4">

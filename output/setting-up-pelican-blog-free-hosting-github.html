@@ -98,7 +98,78 @@
 	<a href="/tag/github.html">github</a>
 </footer><!-- /.post-info -->                    </div>
                 </div>
-                <p>gonna explain later... Im lazy right now :D</p>
+                <p>You want to setup a blog quickly to share everything with your colleagues and
+mates like I'm doing?</p>
+<p>You have the solution right in front of you!</p>
+<p>I did my blog with pelican, and I host it on github.</p>
+<p>Now let's me explain to you how to do it. It's gonna be a very simple tutorial.
+Most of it come from <a href="http://docs.getpelican.com/en/3.3.0/tips.html">here</a>.</p>
+<p>First of all create git repository on github for your user pages. To do so,
+create a repository with this url :</p>
+<div class="highlight"><pre><span class="nt">&lt;user&gt;</span>/<span class="nt">&lt;user&gt;</span>.github.io
+</pre></div>
+
+
+<p>Clone it in your project directory, and you can start creating your blog now with
+pelican.</p>
+<p>Which tools do I need ?
+- pelican (pip install)
+- ghp-import (pip install)
+- Markdown (pip install)</p>
+<p>To setup a skeleton quickly of a pelican you can execute in a bash this command:</p>
+<div class="highlight"><pre><span class="n">pelican</span><span class="o">-</span><span class="n">quickstart</span>
+</pre></div>
+
+
+<p>After answering all the question, you have your skeleton.</p>
+<p>Pelican will search in the "content" directory and put the output in the "output"
+directory.</p>
+<p>Great, let's start! </p>
+<p>So you can write your first post in "content/first_post.md":</p>
+<div class="highlight"><pre><span class="n">Title</span><span class="o">:</span> <span class="n">First</span> <span class="n">Post</span>
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2013</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">16</span> <span class="mi">23</span><span class="o">:</span><span class="mi">10</span>
+<span class="n">Category</span><span class="o">:</span> <span class="n">sysadmin</span>
+<span class="n">Tags</span><span class="o">:</span> <span class="n">aRkadeFR</span>
+<span class="n">Slug</span><span class="o">:</span> <span class="n">first</span><span class="o">-</span><span class="n">post</span><span class="o">-</span><span class="n">url</span>
+<span class="n">Author</span><span class="o">:</span> <span class="n">aRkadeFR</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">This</span> <span class="k">is</span> <span class="n">such</span> <span class="n">a</span> <span class="n">beautiful</span> <span class="n">first</span> <span class="n">post</span>
+
+<span class="n">Change</span> <span class="n">me</span> <span class="o">,</span> <span class="n">please</span> <span class="n">change</span> <span class="n">me</span> <span class="o">!</span>
+</pre></div>
+
+
+<p>Now that you have your first post in markdown syntax, pelican will generate your
+blog :)</p>
+<div class="highlight"><pre><span class="n">pelican</span> <span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="p">.</span><span class="n">py</span>
+</pre></div>
+
+
+<p>You can see the output in the "output" directory. You need to feed git to track
+these new files :</p>
+<div class="highlight"><pre><span class="n">git</span> <span class="n">add</span> <span class="o">--</span> <span class="n">output</span><span class="o">/</span><span class="err">\</span><span class="o">*</span> <span class="n">content</span><span class="o">/</span><span class="err">\</span><span class="o">*</span>
+</pre></div>
+
+
+<p>Now let's just give git the output directory in the gh-pages branch. There is
+ghp-import for that !</p>
+<div class="highlight"><pre><span class="n">ghp</span><span class="o">-</span><span class="n">import</span> <span class="n">output</span>
+</pre></div>
+
+
+<p>And to finish, publish it to your git repository.</p>
+<div class="highlight"><pre><span class="nx">git</span> <span class="nb">push</span> <span class="nx">git</span><span class="p">@</span><span class="nx">github.com</span><span class="p">:</span><span class="o">&lt;</span><span class="nb">user</span><span class="o">&gt;/&lt;</span><span class="nb">user</span><span class="o">&gt;</span><span class="bp">.</span><span class="nx">github.io.git</span> <span class="nx">gh</span><span class="na">-pages</span><span class="p">:</span><span class="nx">master</span>
+</pre></div>
+
+
+<p>That's it ? YES ! </p>
+<p>You can see the result of your pelican blog on your url :</p>
+<div class="highlight"><pre><span class="nt">&lt;user&gt;</span>.github.io
+</pre></div>
+
+
+<p>Tips:
+- to automatized all the process, create a git hooks post-commit with the two
+  lasts commands.</p>
             </div>
             <!-- /.entry-content -->
         </article>
@@ -126,13 +197,8 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/free.html">
-                        free
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="/tag/python.html">
-                        python
+                    <a href="/tag/hosting.html">
+                        hosting
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -141,23 +207,23 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/hosting.html">
-                        hosting
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
-                    <a href="/tag/github.html">
-                        github
-                    </a>
-                </li>
-                <li class="list-group-item tag-4">
                     <a href="/tag/sysadmin.html">
                         sysadmin
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/pelican.html">
-                        pelican
+                    <a href="/tag/vim.html">
+                        vim
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="/tag/python.html">
+                        python
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
+                    <a href="/tag/free.html">
+                        free
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
@@ -166,13 +232,18 @@
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
+                    <a href="/tag/pelican.html">
+                        pelican
+                    </a>
+                </li>
+                <li class="list-group-item tag-4">
                     <a href="/tag/plugin.html">
                         plugin
                     </a>
                 </li>
                 <li class="list-group-item tag-4">
-                    <a href="/tag/vim.html">
-                        vim
+                    <a href="/tag/github.html">
+                        github
                     </a>
                 </li>
         </ul>

@@ -1,5 +1,5 @@
 Title: First steps creating a vim plugin
-Date: 2013-10-15 23:10
+Date: 2013-10-15
 Category: vim
 Tags: aRkadeFR, vim, plugin, programming
 Slug: first-steps-creating-vim-plugin

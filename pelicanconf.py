@@ -2,13 +2,13 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'aRkadeFR'
-SITENAME = u'Programming on linux is a wonderful world'
+AUTHOR = 'aRkadeFR'
+SITENAME = 'Programming under linux'
 SITEURL = ''
 
 TIMEZONE = 'Europe/Paris'
 
-DEFAULT_LANG = u'en'
+DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -19,15 +19,19 @@ TRANSLATION_FEED_ATOM = None
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+          )
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/aRkadeFR'),
         ('github', 'http://github.com/aRkadeFR'),)
 
-DEFAULT_PAGINATION = 20
+DEFAULT_PAGINATION = 10
+
+THEME = './pelican-bootstrap3'
+
+MARKUP = ('md')
+
+FAVICON = 'theme/images/favicon.png'
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-
-THEME = 'pelican-bootstrap3'

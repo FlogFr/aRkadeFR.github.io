@@ -4,8 +4,7 @@ Category: programming
 Tags: aRkadeFR, programming, perl, python, operator, precedence
 Slug: language-operator-precendence-not-the-same
 Author: aRkadeFR
-Summary: Changing of language can be painful, especially for the 
-operator precedence.
+Summary: Changing of language can be painful, especially for the operator precedence.
 
 The difference between the operator precedence amoung the language
 are huge. Even if you think as a minor problem, it will blow up 

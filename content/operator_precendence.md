@@ -6,9 +6,9 @@ Slug: language-operator-precendence-not-the-same
 Author: aRkadeFR
 Summary: Changing of language can be painful, especially for the operator precedence.
 
-The difference between the operator precedence amoung the language
-are huge. Even if you think as a minor problem, it will blow up 
-your face once in a while.
+The difference between the operator precedence among the languages
+are huge. Even if you think of it as a minor problem, it will blow up 
+in your face every once in a while.
 
 I switch between Perl and Python very often, and I find myself
 comfortable with both.

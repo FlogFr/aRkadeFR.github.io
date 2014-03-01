@@ -6,17 +6,17 @@ Slug: first-steps-creating-vim-plugin
 Author: aRkadeFR
 Summary: First steps creating a vim plugin
 
-After couple of years on vim in a daily basis, I wanted to dig on the :help
+After couple of years on vim on a daily basis, I wanted to dig on the :help
 command in order to customize my vim.
 
     :help filetype
     :help script
     :help plugin
 
-After reading couples of help commands, I noticed that writting a plugin for vim
+After reading a couple of help commands, I noticed that writting a plugin for vim
 is really easy and straightforward.
 
-So I just dive into the code for an easy first plugin. Im typing all the command
+So I just dive into the code for an easy first plugin. I'm typing all the command
 ":tabnew ~/.vim/snippets/<filetype>.vim" in order to customize my snippets, then
 when I come back to my first file, I call ":call ReloadAllSnippets()" to reload
 them.

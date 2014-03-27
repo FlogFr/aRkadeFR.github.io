@@ -18,9 +18,9 @@ methods](http://www.cafepy.com/article/python_attributes_and_methods/python_attr
 are called.
 
 We know that we should use the variables in the smaller scope possible, but what
-are the globals variables for then? 
+are the globals and nonlocal variables for then? 
 
-Let's play with it quickly:
+Let's see the global interface quickly :
 
 	"""
 	tests for the global variables
@@ -39,30 +39,6 @@ Let's play with it quickly:
 		print("this is not my global value: {}".format(var1))
 
 
-	"""
-	tests for the nonlocal keyword
-	"""
-	def fct3():
-		var2 = 2
-		def fct31():
-			var2 = 4
-			print("this is my local value: {}".format(var2))
-		fct31()
-		print("this is my local value: {}".format(var2))
-			
-		
-
-	def fct4():
-		var2 = 2
-		def fct41():
-			nonlocal var2
-			var2 = 4
-			print("this is my local value: {}".format(var2))
-		fct41()
-		print("this is my local value: {}".format(var2))
-		
-
-
 	if __name__ == "__main__":
 		print("""------------------------------
 	test of the global variables
@@ -71,12 +47,6 @@ Let's play with it quickly:
 		fct1()
 		fct2()
 		print("this is my global value: {}".format(var1))
-		print("""------------------------------
-	test of the nonlocal variables
-	------------------------------""")
-		fct3()
-		fct4()
-
 
 	output >
 	------------------------------
@@ -86,22 +56,34 @@ Let's play with it quickly:
 	this is my global value: 1
 	this is not my global value: 2
 	this is my global value: 1
-	------------------------------
-	test of the nonlocal variables
-	------------------------------
-	this is my local value: 4
-	this is my local value: 2
-	this is my local value: 4
-	this is my local value: 4
 	
 
-As you see, it's pretty neat.
+As you see, it's neat. Python3 with CPython (and all others if they respect the
+standard), access the value of the name variable which is in the closer scope.
 
-Now, the whole debat on where and when to use them, and where/when not to.
+If you want to access the global variable, you have to specifically tell python3
+with the global statement.
 
-If you write some pythonic code, your global variables will be very well named,
-and your variables won't collide. But it's not a good way of thinking.
+I'm not going into the debat about when and where to use the globals. I will
+only advise to you that variable should be in the closer scope.
 
-As in python3, you need to be very explicit when using a global variable, and
-that's a perfect way to warn the programmer before using them.
+Now what about the nonlocal variable?
+
+And now it's getting very interesting...
+
+
+We gonna see all the power of the nonlocal statement with some [closure](http://en.wikipedia.org/wiki/Closure_%28computer_programming%29).
+
+The very basic example is :
+	
+	def start(x):
+		def summarize(y):
+			nonlocal x
+			return x+y
+		return summarize
+		
+As you can see, we specifically states the x variables is nonlocal and come from
+the outer function (start).
+
+This is a good way to help the readability of your programs.
 

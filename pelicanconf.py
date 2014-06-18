@@ -3,22 +3,24 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'aRkadeFR'
-SITENAME = 'Programming under linux'
-SITEURL = ''
+SITENAME = 'Tech blog of arkadefr / 1avis.fr'
+SITEURL = 'http://arkadefr.github.io'
 
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
 # Feed generation is usually not desired when developing
-FEED_ALL_ATOM = None
-CATEGORY_FEED_ATOM = None
+FEED_ALL_ATOM = 'fees/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/%s.atom.xml'
 TRANSLATION_FEED_ATOM = None
+
 
 # Blogroll
 LINKS =  (('Pelican', 'http://getpelican.com/'),
           ('Python.org', 'http://python.org/'),
           ('Jinja2', 'http://jinja.pocoo.org/'),
+          ('RSS', '/feeds/all.atom.xml'),
           )
 
 # Social widget

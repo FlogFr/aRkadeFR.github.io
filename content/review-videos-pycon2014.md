@@ -27,6 +27,7 @@ We see everything we expected: the pitfalls, the tips of when to use a
 memcache... Just a big thanks cause time flew while watching it.
 [@gardaud](https://twitter.com/gardaud)
 
+
 - ["Characters encoding and Unicode in Python"](https://www.youtube.com/watch?v=Mx70n1dL534)
 Boring stuff the encoding and decoding files? This talk is a very good one for
 understanding what is happening under the hood in Python for encoding and

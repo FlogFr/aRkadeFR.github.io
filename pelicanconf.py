@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'aRkadeFR'
 SITENAME = 'Tech blog of aRkadeFR / 1Avis.fr'
-# SITEURL = 'http://localhost:8000'
+#SITEURL = 'http://localhost:8000'
 SITEURL = 'http://arkadefr.github.io'
 TIMEZONE = 'Europe/Paris'
 

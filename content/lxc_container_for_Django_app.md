@@ -100,10 +100,14 @@ address_ to the bridge.
 Then we need to setup the Debian firewall. This is done with the _iptables_
 command.
 
-We tell the kernel to flush all the _iptables_ etc. and setup the XX.XX.XX.254 as a
-_nat_ network:
+We tell the kernel to flush all the _iptables_ with `iptables -t nat -F && iptables -F`.
+Then setup the eth0 interface as a _nat_ interface:
 
-	iptables -t nat -A POSTROUTING -o eth0 -s XX.XX.XX.XX/24  -j MASQUERADE
+	iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+To forward the port 80 to the container, just add the port forwarding rule:
+
+	iptables -t nat -A PREROUTING -p tcp -d XX.XX.XX.XX --dport 80 -j DNAT --to 10.0.0.2
 
 Checking everything:
 

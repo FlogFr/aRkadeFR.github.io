@@ -1,6 +1,6 @@
 Title: Gitolite to manage git repositories
 Date: 2014-06-25
-Category: 1avis
+Category: sysadmin
 Tags: aRkadeFR, versioning, code, sysadmin
 Slug: gitolite-to-manage-git-repositories
 Author: aRkadeFR

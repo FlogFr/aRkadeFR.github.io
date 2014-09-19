@@ -1,11 +1,10 @@
 Title: What are the globals variables and how to use them ?
 Date: 2014-03-22
-Category: programming, python
+Category: programming
 Tags: global variables, nonlocal, global, aRkadeFR, programming, python3, python
 Slug: py-global-non-local-variables
 Author: aRkadeFR
 Summary: global variable can be very handy, but there's couple of gotcha before using them
-
 
 A good reminder before starting the article is to read the document of the
 [global statement](http://docs.python.org/3/reference/simple_stmts.html#the-global-statement),
@@ -22,31 +21,34 @@ are the globals and nonlocal variables for then?
 
 Let's see the global interface quickly :
 
-	"""
-	tests for the global variables
-	"""
-	var1 = 1
+``` python
+"""
+tests for the global variables
+"""
+var1 = 1
 
 
-	def fct1():
-		global var1
-		var1 = 1
-		print("this is my global value: {}".format(var1))
+def fct1():
+    global var1
+    var1 = 1
+    print("this is my global value: {}".format(var1))
 
 
-	def fct2():
-		var1 = 2
-		print("this is not my global value: {}".format(var1))
+def fct2():
+    var1 = 2
+    print("this is not my global value: {}".format(var1))
 
 
-	if __name__ == "__main__":
-		print("""------------------------------
-	test of the global variables
-	------------------------------""")
-		print("this is my global value: {}".format(var1))
-		fct1()
-		fct2()
-		print("this is my global value: {}".format(var1))
+if __name__ == "__main__":
+    print("""------------------------------
+test of the global variables
+------------------------------""")
+    print("this is my global value: {}".format(var1))
+    fct1()
+    fct2()
+    print("this is my global value: {}".format(var1))
+
+```
 
 	output >
 	------------------------------

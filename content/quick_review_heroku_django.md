@@ -1,6 +1,6 @@
 Title: Quick review making django working with heroku
 Date: 2014-07-30
-Category: sysadmin, devops, dev
+Category: sysadmin
 Tags: aRkadeFR, heroku, django
 Slug: quick-review-making-django-working-with-heroku
 Author: aRkadeFR

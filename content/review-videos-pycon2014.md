@@ -1,6 +1,6 @@
 Title: PyCon 2014, reviews of the videos
 Date: 2014-04-22
-Category: python, conferences, pycon, programming
+Category: programming
 Tags: aRkadeFR, python, pycon2014, pycon
 Slug: pycon-2014-reviews-videos
 Author: aRkadeFR

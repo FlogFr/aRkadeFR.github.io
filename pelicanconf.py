@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'aRkadeFR'
 SITENAME = 'Tech blog of aRkadeFR / 1Avis.fr'
-SITEURL = 'http://localhost:8000'
+SITEURL = '/home/grignonf/Projects/Blog/output'
 SITEURL = 'http://arkadefr.github.io'
 TIMEZONE = 'Europe/Paris'
 
@@ -25,14 +25,14 @@ LINKS =  (('Pelican', 'http://getpelican.com/'),
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/aRkadeFR'),
-        ('github', 'http://github.com/aRkadeFR'),)
+          ('github', 'http://github.com/aRkadeFR'),)
 
 PATH = 'content'
 STATIC_PATHS = ['images', ]
 
 DEFAULT_PAGINATION = 10
 
-THEME = './pelican-bootstrap3'
+THEME = './pelican-foundation'
 
 MARKUP = ('md')
 

@@ -1,0 +1,28 @@
+{% extends 'sided.html' %}
+
+{% block side_content %}
+<div class="large-6 columns">
+
+    {% for article in articles_page.object_list %}
+    <div class="row">
+        <div class="large-2 columns small-3"><img src="{{ SITEURL }}/theme/images/arkadefr.png"/></div>
+        <div class="large-10 columns">
+            <a href="{{ SITEURL }}/{{ article.url }}"><p><strong>{{ article.title }}</strong></p></a>
+            {{ article.summary }}
+            <p class="floating" ><strong>… by {{ article.author }}. <a href="{{ SITEURL }}/{{ article.url }}">View</a></strong></p>
+        </div>
+    </div>
+    <hr/>
+    {% endfor %}
+
+</div>
+
+<aside class="large-3 columns hide-for-small panel">
+    <h1>Tags</h1>
+    <p>
+    {% for tag, articles in tags %}
+    <a href="{{ SITEURL }}/{{ tag.url }}"><span>{{ tag }}</span></a>
+    {% endfor %}
+    </p>
+</aside>
+{% endblock %}

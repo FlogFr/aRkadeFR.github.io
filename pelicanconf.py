@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'aRkadeFR'
 SITENAME = 'Tech blog of aRkadeFR / 1Avis.fr'
 SITEURL = '/home/grignonf/Projects/Blog/output'
-SITEURL = 'http://arkadefr.github.io'
+SITEURL = 'https://arkadefr.github.io'
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'

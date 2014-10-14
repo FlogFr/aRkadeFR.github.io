@@ -1,16 +1,33 @@
-Title: Django introduction
+Title: Handling generic exceptions
 Date: 2014-10-13
 Category: django
 Tags: aRkadeFR, django
-Slug: django-introduction
+Slug: package-django-exceptions
 Author: aRkadeFR
-Summary: Why would you use Django, and what for?
+Summary: django-exceptions is a Pip package to use for handling exceptions to not throw a 500 error to the client by redirecting or rendering a template.
 
-I've used Django for more than a year now, and I wanted to give my feedback on
-this beautiful framework.
+# When should I use django-exceptions ?
 
-# Django 1.7 for the win
+In my case, I got a whole big project into my hands, and some internal error
+appears a bit from everywhere, throwing 500 to the client, and to all my
+monitoring tools.
 
-Even though this major release is really new, it feels very well finished. The
-migrations are built-in (thanks to a big work of Andrew Godwin), there's a good
-app loader. And from just a regular user, everything seems to be smooth.
+This can be very helpful except when the 500 error isn't a real one…
+
+For instance, the main project works with some third API. If the request fails,
+I'm throwing an APIException. But this shouldn't throw a 500 to the client. The
+error doesn't come from this app, but from the remote API.
+
+# How to use it ?
+
+With the very same example, I wanted to render a template with a little message:
+'The remote API is currently experiencing some trouble, please try again later'.
+So you pip install django-excetions, then extends your APIExceptions from:
+django\_exceptions.exceptions.RedirectException.
+You provide either a template\_name or a redirect\_view to the class, and that's
+it. You're ready to go.
+
+Ah! One last thing, same as usual: installation is pip install django-exceptions
+plus adding the middleware django\_exceptions.middleware.ExceptionsMiddleware.
+
+Thank for reading :)

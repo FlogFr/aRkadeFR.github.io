@@ -1261,7 +1261,7 @@ meta.foundation-mq-topbar {
   line-height: 45px;
   position: relative;
   background: #333333;
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
   .top-bar ul {
     margin-bottom: 0;
     list-style: none; }
@@ -1553,7 +1553,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     max-width: 62.5rem;
     margin: 0 auto;
-    margin-bottom: 0; }
+    margin-bottom: 10px; }
 
   .top-bar-section {
     transition: none 0 0;

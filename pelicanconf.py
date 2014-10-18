@@ -3,7 +3,7 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'aRkadeFR'
-SITENAME = 'Tech blog of aRkadeFR / 1Avis.fr'
+SITENAME = 'Tech blog of aRkadeFR'
 SITEURL = '/home/grignonf/Projects/Blog/output'
 SITEURL = 'https://arkadefr.github.io'
 TIMEZONE = 'Europe/Paris'

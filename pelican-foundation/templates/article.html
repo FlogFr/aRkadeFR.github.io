@@ -1,8 +1,6 @@
 {% extends 'sided.html' %}
 
 {% block side_content %}
-<div class="large-9 columns">
-    <h1 id="article-title" class="panel">{{ article.title}}</h1>
-    {{ article.content }}
-</div>
+<h1 id="article-title" class="panel">{{ article.title}}</h1>
+{{ article.content }}
 {% endblock %}

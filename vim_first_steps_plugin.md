@@ -1,10 +1,12 @@
-Title: First steps creating a vim plugin
-Date: 2013-10-15
-Category: vim
-Tags: aRkadeFR, vim, plugin, programming
-Slug: first-steps-creating-vim-plugin
-Author: aRkadeFR
-Summary: First steps creating a vim plugin
+---
+title: First steps creating a vim plugin
+date: 2013-10-15
+category: vim
+tags: aRkadeFR, vim, plugin, programming
+slug: first-steps-creating-vim-plugin
+author: aRkadeFR
+summary: First steps creating a vim plugin
+---
 
 After couple of years on vim on a daily basis, I wanted to dig on the :help
 command in order to customize my vim.

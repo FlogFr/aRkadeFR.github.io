@@ -1,10 +1,12 @@
-Title: Quick review making django working with heroku
-Date: 2014-07-30
-Category: sysadmin
-Tags: aRkadeFR, heroku, django
-Slug: quick-review-making-django-working-with-heroku
-Author: aRkadeFR
-Summary: After being tired of doing some sysadmin, I chose to migrate 1avis.fr to heroku.
+---
+title: Quick review making django working with heroku
+date: 2014-07-30
+category: sysadmin
+tags: aRkadeFR, heroku, django
+slug: quick-review-making-django-working-with-heroku
+author: aRkadeFR
+summary: After being tired of doing some sysadmin, I chose to migrate 1avis.fr to heroku.
+---
 
 # Hey Pony lovers! #
 

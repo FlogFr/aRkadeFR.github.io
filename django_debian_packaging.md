@@ -1,10 +1,12 @@
-Title: Django application Debian packaging for deployment
-Date: 2014-06-27
-Category: django
-Tags: aRkadeFR, Django, sysadmin, Debian, packaging, deployment
-Slug: Django-application-Debian-packaging-for-deployment
-Author: aRkadeFR
-Summary: Django deployment can be easy with Debian packages.
+---
+title: Django application Debian packaging for deployment
+date: 2014-06-27
+category: django
+tags: aRkadeFR, Django, sysadmin, Debian, packaging, deployment
+slug: Django-application-Debian-packaging-for-deployment
+author: aRkadeFR
+summary: Django deployment can be easy with Debian packages.
+---
 
 # Deployment of Django application as Debian package #
 

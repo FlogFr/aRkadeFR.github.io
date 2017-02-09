@@ -1,10 +1,12 @@
-Title: Django templatetags and DRY
-Date: 2014-10-18
-Category: django
-Tags: aRkadeFR, django, app
-Slug: django-common-templatetags-application
-Author: aRkadeFR
-Summary: common templatetags reusable over apps
+---
+title: Django templatetags and DRY
+date: 2014-10-18
+category: django
+tags: aRkadeFR, django, app
+slug: django-common-templatetags-application
+author: aRkadeFR
+summary: common templatetags reusable over apps
+---
 
 If you're new to templatetags, please read the [documentation](https://docs.djangoproject.com/en/1.7/ref/templates/builtins/).
 And how the [documentation](https://docs.djangoproject.com/en/1.7/howto/custom-template-tags/)

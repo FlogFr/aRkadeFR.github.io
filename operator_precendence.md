@@ -1,10 +1,12 @@
-Title: Language operator precendence aren't the same, gotcha!
-Date: 2014-03-01
-Category: programming
-Tags: aRkadeFR, programming, perl, python, operator, precedence
-Slug: language-operator-precendence-not-the-same
-Author: aRkadeFR
-Summary: Changing of language can be painful, especially for the operator precedence.
+---
+title: Language operator precendence aren't the same, gotcha!
+date: 2014-03-01
+category: programming
+tags: aRkadeFR, programming, perl, python, operator, precedence
+slug: language-operator-precendence-not-the-same
+author: aRkadeFR
+summary: Changing of language can be painful, especially for the operator precedence.
+---
 
 The difference between the operator precedence among the languages
 are huge. Even if you think of it as a minor problem, it will blow up 

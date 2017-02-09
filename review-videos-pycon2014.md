@@ -1,10 +1,12 @@
-Title: PyCon 2014, reviews of the videos
-Date: 2014-04-22
-Category: programming
-Tags: aRkadeFR, python, pycon2014, pycon
-Slug: pycon-2014-reviews-videos
-Author: aRkadeFR
-Summary: After a bit more than a week watching all the videos that interested me (basically the Django, Python Core and others) I offer you a quick review of my favorite one
+---
+title: PyCon 2014, reviews of the videos
+date: 2014-04-22
+category: programming
+tags: aRkadeFR, python, pycon2014, pycon
+slug: pycon-2014-reviews-videos
+author: aRkadeFR
+summary: After a bit more than a week watching all the videos that interested me (basically the Django, Python Core and others) I offer you a quick review of my favorite one
+---
 
 You can find the videos of PyCon2014 [here](http://pyvideo.org/category/50/pycon-us-2014).
 

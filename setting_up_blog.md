@@ -1,10 +1,12 @@
-Title: Setting up your pelican blog for free on github
-Date: 2013-10-16
-Category: sysadmin
-Tags: aRkadeFR, sysadmin, pelican, python, blog, hosting, free, github
-Slug: setting-up-pelican-blog-free-hosting-github
-Author: aRkadeFR
-Summary: Setting up your pelican for free on github
+---
+title: Setting up your pelican blog for free on github
+date: 2013-10-16
+category: sysadmin
+tags: aRkadeFR, sysadmin, pelican, python, blog, hosting, free, github
+slug: setting-up-pelican-blog-free-hosting-github
+author: aRkadeFR
+summary: Setting up your pelican for free on github
+---
 
 You want to setup a blog quickly to share everything with your colleagues and
 mates like I'm doing?

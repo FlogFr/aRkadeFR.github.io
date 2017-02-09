@@ -1,10 +1,12 @@
-Title: What are the globals variables and how to use them ?
-Date: 2014-03-22
-Category: programming
-Tags: global variables, nonlocal, global, aRkadeFR, programming, python3, python
-Slug: py-global-non-local-variables
-Author: aRkadeFR
-Summary: global variable can be very handy, but there's couple of gotcha before using them
+---
+title: What are the globals variables and how to use them ?
+date: 2014-03-22
+category: programming
+tags: global variables, nonlocal, global, aRkadeFR, programming, python3, python
+slug: py-global-non-local-variables
+author: aRkadeFR
+summary: global variable can be very handy, but there's couple of gotcha before using them
+---
 
 A good reminder before starting the article is to read the document of the
 [global statement](http://docs.python.org/3/reference/simple_stmts.html#the-global-statement),

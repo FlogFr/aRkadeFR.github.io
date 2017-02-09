@@ -1,10 +1,12 @@
-Title: Gitolite to manage git repositories
-Date: 2014-06-25
-Category: sysadmin
-Tags: aRkadeFR, versioning, code, sysadmin
-Slug: gitolite-to-manage-git-repositories
-Author: aRkadeFR
-Summary: quick installation of gitolite and manage your repositories
+---
+title: Gitolite to manage git repositories
+date: 2014-06-25
+category: sysadmin
+tags: aRkadeFR, versioning, code, sysadmin
+slug: gitolite-to-manage-git-repositories
+author: aRkadeFR
+summary: quick installation of gitolite and manage your repositories
+---
 
 # setup gitolite #
 

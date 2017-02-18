@@ -1,3 +1,10 @@
+---
+layout: default
+title: Setup Github Pages with jekyll
+description: Setup your blog / documentation with jekyll on Github Pages.
+date: 2017-02-16
+categories: [system]
+---
 
 # Setup github pages with jekyll for bloging
 

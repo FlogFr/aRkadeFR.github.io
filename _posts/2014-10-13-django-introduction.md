@@ -1,11 +1,9 @@
 ---
+resource: true
 title: Handling generic exceptions
+description: django-exceptions is a Pip package to use for handling exceptions to not throw a 500 error to the client by redirecting or rendering a template.
 date: 2014-10-13
-category: django
-tags: aRkadeFR, django
-slug: package-django-exceptions
-author: aRkadeFR
-summary: django-exceptions is a Pip package to use for handling exceptions to not throw a 500 error to the client by redirecting or rendering a template.
+categories: [development]
 ---
 
 # When should I use django-exceptions ?

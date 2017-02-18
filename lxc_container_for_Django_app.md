@@ -1,5 +1,5 @@
 ---
-title: Infrastructure for 1Avis.fr: LXC container for Django web application
+title: Infrastructure for 1Avis.fr - LXC container for Django web application
 date: 2014-06-24
 category: sysadmin
 tags: 1Avis.fr, aRkadeFR, LXC, web server, sysadmin
